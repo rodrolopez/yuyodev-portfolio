@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center pt-24 pb-12 px-6">
+    <main className="flex min-h-screen flex-col items-center pt-36 md:pt-40 pb-12 px-6">
       
-      {/* Fondo sutil con destellos - Reemplaza el azul por esmeralda */}
+      {/* Fondo sutil con destellos */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-20"></div>
       <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none"></div>
 
@@ -42,11 +42,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Sección Sobre Mí: La conexión entre la tierra y el servidor */}
+      {/* Sección Sobre Mí */}
       <section className="relative z-10 w-full max-w-4xl mt-12 text-left bg-zinc-900/40 border border-zinc-800/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="p-3 bg-emerald-500/10 rounded-lg">
-            {/* Ícono temporal de hoja/código usando SVG puro */}
             <svg className="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
