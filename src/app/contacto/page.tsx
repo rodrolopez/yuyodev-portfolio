@@ -56,7 +56,7 @@ export default function ContactoPage() {
             <h2 className="text-2xl font-bold text-zinc-100 mb-2">Rodrigo Lopez</h2>
             <p className="text-emerald-400 font-medium mb-6">Desarrollador Backend .NET | Arquitecto de Software</p>
             <p className="text-zinc-400 mb-8 leading-relaxed">
-              Radicado en San Juan, transformo requerimientos de negocio complejos en código resiliente. Si buscás un aliado técnico para escalar tu empresa, estoy a un mensaje de distancia.
+              Hola! Soy de San Juan, Argentina. Transformo requerimientos de negocio complejos en código resiliente. Si buscás un aliado técnico para escalar tu empresa, estoy a un mensaje de distancia.
             </p>
 
             <div className="space-y-4 w-full">
