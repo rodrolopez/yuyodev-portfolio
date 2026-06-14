@@ -32,9 +32,10 @@ export async function enviarMensajeContacto(formData: FormData) {
     });
 
     await transporter.sendMail({
-      from: `"YuyoDev Web" <${process.env.SMTP_USER}>`,
-      to: 'yuyodevar@gmail.com', // ACÁ PONÉ TU GMAIL REAL
-      subject: `Nuevo contacto de: ${nombre}`,
+      from: `"YuyoDev" <${process.env.SMTP_USER}>`,
+      to: process.env.SMTP_USER, // ACÁ PONÉ TU GMAIL REAL
+      replyTo: email, // Para que puedas responder directamente al email del contacto
+      subject: `Hola ${nombre}!, nos llegó tu mensaje a YuyoDev.`,
       text: `Nombre: ${nombre}\nEmail: ${email}\n\nMensaje:\n${mensaje}`,
       html: `
         <h3>Nuevo contacto desde YuyoDev</h3>
