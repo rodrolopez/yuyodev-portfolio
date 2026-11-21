@@ -1,0 +1,10 @@
+{
+  "extends": "../../../../tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS", "moduleResolution": "node", "noEmit": false,
+    "outDir": "../../../../.contact-tests", "rootDir": "..", "incremental": false,
+    "isolatedModules": false
+  },
+  "include": ["../contact-service.ts", "./*.test.ts"],
+  "exclude": []
+}

@@ -2,3 +2,8 @@ node_modules
 .next
 .git
 README.md
+.env*
+**/.env*
+!.env.example
+.contact-tests
+*.tsbuildinfo
